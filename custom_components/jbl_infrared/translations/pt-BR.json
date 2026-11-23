@@ -1,0 +1,109 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurar soundbar JBL",
+        "description": "Selecione o modelo da soundbar e o emissor e/ou receptor infravermelho.",
+        "data": {
+          "model": "Modelo",
+          "infrared_entity_id": "Emissor infravermelho",
+          "infrared_receiver_entity_id": "Receptor infravermelho"
+        },
+        "data_description": {
+          "infrared_entity_id": "Usado para enviar comandos para a soundbar.",
+          "infrared_receiver_entity_id": "Opcional. Transforma os botões do controle da JBL em eventos para automações."
+        }
+      }
+    },
+    "error": {
+      "missing_infrared_entity": "Selecione um emissor, um receptor ou os dois."
+    },
+    "abort": {
+      "no_infrared_entities": "Nenhum emissor ou receptor infravermelho encontrado. Configure antes um proxy infravermelho (por exemplo, ESPHome)."
+    }
+  },
+  "entity": {
+    "button": {
+      "power": {
+        "name": "Ligar/desligar"
+      },
+      "mute": {
+        "name": "Mudo"
+      },
+      "volume_up": {
+        "name": "Aumentar volume"
+      },
+      "volume_down": {
+        "name": "Diminuir volume"
+      },
+      "previous": {
+        "name": "Anterior"
+      },
+      "next": {
+        "name": "Próxima"
+      },
+      "play_pause": {
+        "name": "Reproduzir/pausar"
+      },
+      "source_hdmi_in": {
+        "name": "HDMI IN"
+      },
+      "source_hdmi_arc": {
+        "name": "HDMI ARC"
+      },
+      "source_optical": {
+        "name": "Óptico"
+      },
+      "source_bluetooth": {
+        "name": "Bluetooth"
+      },
+      "mode_music": {
+        "name": "Modo música"
+      },
+      "mode_movie": {
+        "name": "Modo filme"
+      },
+      "mode_news": {
+        "name": "Modo notícias"
+      },
+      "voice": {
+        "name": "Voz"
+      },
+      "dolby_atmos": {
+        "name": "Dolby Atmos"
+      },
+      "bass": {
+        "name": "Graves"
+      }
+    },
+    "event": {
+      "received_command": {
+        "name": "Comando recebido",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "power": "Ligar/desligar",
+              "mute": "Mudo",
+              "volume_up": "Aumentar volume",
+              "volume_down": "Diminuir volume",
+              "previous": "Anterior",
+              "next": "Próxima",
+              "play_pause": "Reproduzir/pausar",
+              "source_hdmi_in": "HDMI IN",
+              "source_hdmi_arc": "HDMI ARC",
+              "source_optical": "Óptico",
+              "source_bluetooth": "Bluetooth",
+              "mode_music": "Modo música",
+              "mode_movie": "Modo filme",
+              "mode_news": "Modo notícias",
+              "voice": "Voz",
+              "dolby_atmos": "Dolby Atmos",
+              "bass": "Graves",
+              "unknown": "Desconhecido"
+            }
+          }
+        }
+      }
+    }
+  }
+}

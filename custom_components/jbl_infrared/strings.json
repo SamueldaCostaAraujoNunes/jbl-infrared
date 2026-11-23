@@ -1,0 +1,109 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up JBL soundbar",
+        "description": "Select the soundbar model and the infrared emitter and/or receiver.",
+        "data": {
+          "model": "Model",
+          "infrared_entity_id": "Infrared emitter",
+          "infrared_receiver_entity_id": "Infrared receiver"
+        },
+        "data_description": {
+          "infrared_entity_id": "Used to send commands to the soundbar.",
+          "infrared_receiver_entity_id": "Optional. Turns the keys of the JBL remote into events for automations."
+        }
+      }
+    },
+    "error": {
+      "missing_infrared_entity": "Select an emitter, a receiver or both."
+    },
+    "abort": {
+      "no_infrared_entities": "No infrared emitter or receiver found. Set up an infrared proxy (for example ESPHome) first."
+    }
+  },
+  "entity": {
+    "button": {
+      "power": {
+        "name": "Power"
+      },
+      "mute": {
+        "name": "Mute"
+      },
+      "volume_up": {
+        "name": "Volume up"
+      },
+      "volume_down": {
+        "name": "Volume down"
+      },
+      "previous": {
+        "name": "Previous"
+      },
+      "next": {
+        "name": "Next"
+      },
+      "play_pause": {
+        "name": "Play/pause"
+      },
+      "source_hdmi_in": {
+        "name": "HDMI IN"
+      },
+      "source_hdmi_arc": {
+        "name": "HDMI ARC"
+      },
+      "source_optical": {
+        "name": "Optical"
+      },
+      "source_bluetooth": {
+        "name": "Bluetooth"
+      },
+      "mode_music": {
+        "name": "Music mode"
+      },
+      "mode_movie": {
+        "name": "Movie mode"
+      },
+      "mode_news": {
+        "name": "News mode"
+      },
+      "voice": {
+        "name": "Voice"
+      },
+      "dolby_atmos": {
+        "name": "Dolby Atmos"
+      },
+      "bass": {
+        "name": "Bass"
+      }
+    },
+    "event": {
+      "received_command": {
+        "name": "Received command",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "power": "Power",
+              "mute": "Mute",
+              "volume_up": "Volume up",
+              "volume_down": "Volume down",
+              "previous": "Previous",
+              "next": "Next",
+              "play_pause": "Play/pause",
+              "source_hdmi_in": "HDMI IN",
+              "source_hdmi_arc": "HDMI ARC",
+              "source_optical": "Optical",
+              "source_bluetooth": "Bluetooth",
+              "mode_music": "Music mode",
+              "mode_movie": "Movie mode",
+              "mode_news": "News mode",
+              "voice": "Voice",
+              "dolby_atmos": "Dolby Atmos",
+              "bass": "Bass",
+              "unknown": "Unknown"
+            }
+          }
+        }
+      }
+    }
+  }
+}

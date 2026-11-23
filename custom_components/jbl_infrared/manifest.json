@@ -1,0 +1,12 @@
+{
+  "domain": "jbl_infrared",
+  "name": "JBL Infrared",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["infrared"],
+  "documentation": "https://github.com/",
+  "integration_type": "device",
+  "iot_class": "assumed_state",
+  "requirements": [],
+  "version": "0.1.0"
+}
